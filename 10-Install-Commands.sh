@@ -12,26 +12,26 @@ echo "You are runnig with root privilages"
 
 fi
 
-dnf list installed mysql
+dnf list installed Nginx
 
 if [ $? -ne 0 ]
 then
-echo "MySQL is not installed. Installing the MySQL package in your system"
-dnf install mysql -y
+echo "Nginx is not installed. Installing the Nginx package in your system"
+dnf install nginx -y
 
 if [ $? -eq 0 ]
 then
-echo "Installing mysql is success"
+echo "Installing nginx is success"
 
 else
 
-echo "Installing mysql is failure. Please check the error and try again"
+echo "Installing nginx is failure. Please check the error and try again"
 exit 1
 
 fi
 
 else
-echo "MySQL is already installed in your system"
+echo "Nginx is already installed in your system"
 
 fi 
 
