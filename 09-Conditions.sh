@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NUMBER=$1
+NUMBER1=$1
 
 if [ $NUMBER1 -eq 1000 ]
 then
