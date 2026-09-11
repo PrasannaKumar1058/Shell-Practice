@@ -30,7 +30,7 @@ then
 echo "MySql is not installed. Installing the MySql package in your system"
 dnf install mysql -y
 
-VALIDATE $1 "MYSql"
+VALIDATE $? "MYSql"
 
 else
 echo "MySql is already installed in your system"
@@ -47,7 +47,7 @@ then
 echo "Nginx is not installed. Installing the Nginx package in your system"
 dnf install nginx -y
 
-VALIDATE $1 "Nginx"
+VALIDATE $? "Nginx"
 
 else
 echo "Nginx is already installed in your system"
@@ -64,7 +64,7 @@ then
 echo "Python3 is not installed. Installing the Python3 package in your system"
 dnf install python3 -y
 
-VALIDATE $1 "Python3"
+VALIDATE $? "Python3"
 
 else
 echo "Python3 is already installed in your system"
