@@ -1,8 +1,8 @@
 #!/bin/bash
 
-NUMBER1=$1
+NUMBER=$1
 
-if [ $NUMBER1 -eq 1000 ]
+if [ $NUMBER -eq 1000 ]
 then
 echo "given number is equal to 1000"
 
